@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cliente socket.io</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <section class="msger">
+      <header class="msger-header">
+        <div class="msger-header-title">Hack Academy Chat</div>
+        <div class="msger-header-username" id="bienvenida"></div>
+      </header>
+
+      <main class="msger-chat" id="listadoMensajes"></main>
+
+      <form id="form" class="msger-inputarea">
+        <input
+          type="text"
+          class="msger-input"
+          placeholder="Escriba su mensaje..."
+          id="mensaje"
+        />
+        <button type="submit" class="msger-send-btn">Enviar</button>
+      </form>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/timeago.full.min.js"></script>
+
+    <script src="js/client.js"></script>
+  </body>
+</html>
